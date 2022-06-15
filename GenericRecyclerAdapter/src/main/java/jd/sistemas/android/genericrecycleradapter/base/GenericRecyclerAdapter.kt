@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.RecyclerView
 
-class echo "# Generic-Recycler-Adapter" >> README.md<T : Any>(
+class GenericRecyclerAdapter<T : Any>(
     private val dataSet: List<T>,
     @LayoutRes val layoutID: Int,
     private val bindingInterface: GenericRecyclerAdapterInterface<T>
